@@ -1,0 +1,10 @@
+
+spring:
+  config:
+    activate:
+      on-profile:
+        - local
+  datasource:
+    url: jdbc:postgresql://172.30.146.53:5432/fgtracking?prepareThreshold=0&sslmode=prefer
+    username: appuser
+    password: t3l3m3tr1
