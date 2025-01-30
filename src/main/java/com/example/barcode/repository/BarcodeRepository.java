@@ -1,3 +1,4 @@
+/*
 package com.example.barcode.repository;
 
 import com.example.barcode.entity.GenerateBarcode;
@@ -18,3 +19,4 @@ public interface BarcodeRepository extends JpaRepository<GenerateBarcode, Long> 
             "WHERE generation_id = :generationId", nativeQuery = true)
     List<Object[]> findBarcodesByGenerationId(@Param("generationId") UUID generationId);
 }
+*/

@@ -3,26 +3,27 @@ package com.example.barcode.entity;
 
 
 import com.example.barcode.dto.BarcodeDTO;
-import com.example.barcode.helper.BarcodeDTOListConverter;
-import jakarta.persistence.*;
+//import com.example.barcode.helper.BarcodeDTOListConverter;
+//import jakarta.persistence.*;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.UUID;
 
 
-@Entity
-@Table(name = "generate_barcode", schema = "barcode")
+@Component
+//@Table(name = "generate_barcode", schema = "barcode")
 public class GenerateBarcode {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+   /* @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)*/
     private Long id;
 
-    @Column(nullable = false)
+   /* @Column(nullable = false)*/
     private UUID generationId;
 
-    @Column(nullable = false, columnDefinition = "jsonb")
-    @Convert(converter = BarcodeDTOListConverter.class)
+   /* @Column(nullable = false, columnDefinition = "jsonb")
+    @Convert(converter = BarcodeDTOListConverter.class)*/
     private List<BarcodeDTO> serialNo;
 
     // Getters and Setters

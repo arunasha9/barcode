@@ -29,9 +29,15 @@ public class PrintController {
 //        }
 //
 //        return ResponseEntity.ok(barcodeDetails);
-        List<BarcodeDTO> barcodeDetails = new ArrayList<>();
-        barcodeDetails.add(new BarcodeDTO(1, "AFBR-57F5MZ", "AXKL2349001"));
-        barcodeDetails.add(new BarcodeDTO(2, "YYWW", "2233"));
+        List<BarcodeDTO> barcodeDetails = new ArrayList<>();/*
+        BarcodeDTO obj1= new BarcodeDTO();
+        obj1.setSetNo(1);
+        obj1.setBarcode("AXKL2349001");
+        obj1.setVarName("AFBR-57F5MZ");*/
+
+        //barcodeDetails.add(obj1);
+        barcodeDetails.add(new BarcodeDTO(1,"AFBR-57F5MZ", "AXKL2349005"));
+        barcodeDetails.add(new BarcodeDTO(2, "YYWW", "2225"));
         barcodeDetails.add(new BarcodeDTO(3, "AFBR-57F5UMZ-EP1", ""));
 
         // Print the first barcode to the console for verification
